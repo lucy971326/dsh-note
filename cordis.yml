@@ -1,0 +1,6 @@
+- insert:
+    - id: tool-session-notes
+      name: 'file:///C:/Users/Administrator/Desktop/Learn/dsh-session-notes/src/index.ts'
+      config:
+        maxNoteBytes: 8192
+        maxNotesPerSession: 128

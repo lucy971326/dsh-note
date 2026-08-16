@@ -1,0 +1,37 @@
+.anchor { position: relative; display: inline-flex; align-items: center; font: var(--dsw-font-xs-13); }
+.trigger { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; padding: 4px 7px; border: 0; border-radius: 7px; background: transparent; color: var(--dsw-alias-label-secondary); cursor: pointer; font: inherit; }
+.trigger:hover, .trigger[aria-expanded='true'] { background: var(--dsw-alias-interactive-bg-hover); color: var(--dsw-alias-label-primary); }
+.triggerLabel { white-space: nowrap; }
+.badge { min-width: 16px; padding: 1px 5px; border-radius: 9px; background: var(--dsw-alias-state-business-tertiary); color: var(--dsw-alias-state-business-primary); font-size: 11px; font-weight: 500; line-height: 17px; text-align: center; }
+.popover { position: absolute; z-index: 20; right: 0; bottom: calc(100% + 8px); width: min(360px, calc(100vw - 32px)); max-height: min(520px, calc(100vh - 120px)); overflow: auto; box-sizing: border-box; padding: 12px; border: 1px solid var(--dsw-alias-border-l2); border-radius: 10px; background: var(--dsw-alias-bg-layer-3); color: var(--dsw-alias-label-primary); box-shadow: var(--dsw-shadow-lv3); font: var(--dsw-font-xs-13); }
+.title { font-weight: 700; }
+.subtitle { margin-top: 2px; color: var(--dsw-alias-label-tertiary); font-size: 11px; line-height: 17px; }
+.header, .headerMain, .noteTop, .noteActions, .formActions { display: flex; align-items: center; }
+.header { justify-content: space-between; gap: 12px; min-height: 28px; padding-bottom: 8px; border-bottom: 1px solid var(--dsw-alias-border-l2); }
+.headerMain { min-width: 0; }
+.textButton, .iconButton { border: 0; background: transparent; color: var(--dsw-alias-label-secondary); cursor: pointer; font: inherit; }
+.mark { display: grid; width: 18px; height: 18px; place-items: center; border-radius: 5px; background: var(--dsw-alias-state-business-tertiary); color: var(--dsw-alias-state-business-primary); font-size: 12px; font-weight: 600; }
+.textButton { padding: 5px 8px; border-radius: 7px; color: var(--dsw-alias-label-secondary); font-size: 12px; font-weight: 500; }
+.textButton:hover, .iconButton:hover { background: var(--dsw-alias-interactive-bg-hover); color: var(--dsw-alias-label-primary); }
+.primary { background: var(--dsw-alias-button-primary-fill); color: var(--dsw-alias-label-primary-foreground); }
+.primary:hover { background: var(--dsw-alias-button-primary-hover); color: var(--dsw-alias-label-primary-foreground); }
+.textButton:disabled, .iconButton:disabled { cursor: default; opacity: .5; }
+.notes { display: grid; gap: 6px; margin-top: 10px; }
+.note { min-width: 0; padding: 8px 10px; border: 1px solid var(--dsw-alias-border-l2); border-radius: 8px; background: var(--dsw-alias-bg-layer-2); }
+.noteKey { margin-right: 7px; color: var(--dsw-alias-label-primary); font-weight: 600; }
+.state, .error { display: block; margin-top: 10px; color: var(--dsw-alias-label-tertiary); }
+.error { color: var(--dsw-alias-state-error-primary); }
+.note { display: grid; gap: 6px; }
+.noteTop { justify-content: space-between; gap: 8px; }
+.noteActions { justify-content: flex-end; gap: 2px; }
+.noteBody { overflow-wrap: anywhere; line-height: 1.5; white-space: pre-wrap; }
+.noteTime { color: var(--dsw-alias-label-tertiary); font-size: 11px; line-height: 17px; }
+.iconButton { padding: 4px 6px; border-radius: 6px; font-size: 11px; }
+.danger { color: var(--dsw-alias-state-error-primary); }
+.editor { display: grid; gap: 10px; margin-top: 10px; padding: 10px; border: 1px solid var(--dsw-alias-border-l2); border-radius: 8px; background: var(--dsw-alias-bg-layer-2); }
+.field { display: grid; gap: 5px; color: var(--dsw-alias-label-secondary); font-size: 11px; font-weight: 500; }
+.input, .textarea { box-sizing: border-box; width: 100%; padding: 7px 8px; border: 1px solid var(--dsw-alias-border-l2); border-radius: 7px; background: var(--dsw-alias-bg-layer-1); color: var(--dsw-alias-label-primary); font: inherit; outline: none; }
+.input:focus, .textarea:focus { border-color: var(--dsw-alias-brand-primary); }
+.textarea { min-height: 76px; resize: vertical; line-height: 1.45; }
+.input:disabled { opacity: .65; }
+.formActions { justify-content: flex-end; gap: 6px; }

@@ -1,0 +1,7 @@
+# Installable Session Notes bundle layer.
+- insert:
+    - id: session-notes
+      name: 'dsh-session-notes'
+      config:
+        maxNoteBytes: 8192
+        maxNotesPerSession: 128
